@@ -29,13 +29,13 @@ content='''<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <titl></title>
 </head>
-<body align="center" bgcolor="blue">
+<body align="center" bgcolor="aqua">
     <h1><u>TCP/IP Protocol</u></h1>
-     <h2>
-     1. Appliction layer</h2>
-     <h2>2. Transport layer</h2>
-     <h2>3. Internet layer</h2>
-     <h2>4. Network access layer</h2>
+     <h2><i>
+     1. Appliction layer</i></h2>
+     <h2><i>2. Transport layer</i></h2>
+     <h2><i>3. Internet layer</i></h2>
+     <h2><i>4. Network access layer</i></h2>
      
 </body>
 </html>'''
@@ -52,7 +52,7 @@ httpd=HTTPServer(server_address,MyServer)
 httpd.serve_forever()
 ```
 # OUTPUT:
-![alt text](<Screenshot 2025-09-19 123736.png>)
+![alt text](<Screenshot 2025-09-20 113816.png>)
 ![alt text](<Screenshot 2025-09-19 130155.png>)
 # RESULT:
 The program for implementing simple webserver is executed successfully.
