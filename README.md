@@ -28,15 +28,29 @@ content='''<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <titl></title>
+    <style>
+        body{
+            background-image: linear-gradient(15.875deg,aqua,red,yellow,green)
+        }
+    </style>
 </head>
-<body align="center" bgcolor="aqua">
-    <h1><u>TCP/IP Protocol</u></h1>
-     <h2><i>
-     1. Appliction layer</i></h2>
-     <h2><i>2. Transport layer</i></h2>
-     <h2><i>3. Internet layer</i></h2>
-     <h2><i>4. Network access layer</i></h2>
+<body align="center">
+    <h1><u>{TCP  /  IP} Protocol</u></h1>
      
+    <ol type='1' start='1'>
+    <h2>(A) Application layer</h1>
+    <li><i>Provides services for user applications (web, email, file transfer).
+    Protocols: HTTP, HTTPS, FTP, SMTP, DNS, POP3, IMAP</li>
+    <h2>(B) Transport layer</h1>
+    <li>Responsible for end-to-end communication between devices.
+    TCP (Transmission Control Protocol): Reliable, connection-oriented (e.g., web, email).
+    UDP (User Datagram Protocol): Fast, connectionless (e.g., streaming, gaming).</li>
+    <h2><i>(C) Internet layer</h1>
+    <li>Handles logical addressing and routing of data packets.
+    Protocols: IP (IPv4/IPv6), ICMP, ARP</li>
+    <h2><i>(D) Network access layer</h1>
+    <li>Defines how data is physically sent over the network (hardware-level communication).
+    Protocols: Ethernet, Wi-Fi, PPP</li>     
 </body>
 </html>'''
 class MyServer(BaseHTTPRequestHandler):
